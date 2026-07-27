@@ -31,8 +31,9 @@ Bash
 - Ollama_Stats_Check
   - Is the Ollama service running? (systemctl is-active ollama)
   - Is Ollama bound to 127.0.0.1 not 0.0.0.0? (ss -tuln | grep 11434)
-  - Is the Ollama API responding? (curl -s http://localhost:11434/api/tags)
-  - How many models are installed? (ollama list | tail -n +2 | wc -l)
-  - Is model disk usage below 80% of the partition?    Any ERROR entries in Ollama journal in the last hour?
+  - Is the Ollama API responding? 
+  - How many models are installed? 
+  - Is model disk usage below 80% of the partition?
+  - Any ERROR entries in Ollama journal in the last hour?
   - Output a final summary: HEALTHY / WARNING / CRITICAL
  
