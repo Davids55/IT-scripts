@@ -3,6 +3,10 @@ IT-scripts
 
 Serra College IT 100 -summer semester 2026
 
+CompTIA A+ goal
+  -
+I plan to test for the CompTIA A+ before the end of august of 2026
+
 
 PowerShell
   -
