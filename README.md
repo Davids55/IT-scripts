@@ -19,7 +19,16 @@ PowerShell
   - Output: save to a .csv file
 
 - Event_Log_Parser
-
+  - Query System log for Error events in last 24 hours
+  - Query Security log for Event ID 4625 (failed logon) in last 24 hours
+  - Output both to a single text report with timestamps
+  
+- Onboard.ps1
+  - remanes machine
+  - sets DNS
+  - enables firewall
+  - disables FAX, XblGamesave, and Wsearch
+  - outputs a completion report
 
 Bash
   -
@@ -37,3 +46,5 @@ Bash
   - Any ERROR entries in Ollama journal in the last hour?
   - Output a final summary: HEALTHY / WARNING / CRITICAL
  
+- Enhanced_Ollama_Health_Moninter
+  - added add unauthorized model detection (compare against an approved list) and alert if API is exposed on 0.0.0.0
